@@ -33,6 +33,18 @@
     h1 span.icon {
       font-size: 22px;
     }
+
+    /* 👇 추가됨: 로고 자동 반응형 */
+    .logo-box {
+      text-align: center;
+      margin: 10px 0 16px;
+    }
+    .logo-box img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+    }
+
     .subtitle {
       font-size: 13px;
       color: #666;
@@ -113,7 +125,14 @@
 </head>
 <body>
 <div class="container">
+    <!-- 👇 여기 추가됨 (로고 삽입) -->
+  <div class="logo-box">
+    <img src="/static/img/pajulogo.png" alt="파주 로고" />
+  </div>
+
   <h1><span class="icon">🟢</span>파주시 돌봄온 음성 상담</h1>
+
+
   <div class="subtitle">
     말하기 버튼을 누르고 질문하시면,<br/>
     음성을 인식해 파주시 안내를 읽어드립니다.
@@ -127,11 +146,11 @@
     <audio id="answerAudio" controls></audio>
   </div>
 
-  <div class="footer">
+<div class="footer" style="text-align: left;">
     ● 테스트용 MVP 버전입니다.<br/>
-    ● 📢 3초~6초 정도, 또박또박 한 문장씩 말씀해 주세요.
-    ● 인식이 잘 안 되면 또박또박 다시 말씀해 주세요.
-  </div>
+    ● 📢 3초~6초 정도, 또박또박 한 문장씩 말씀해 주세요.<br/>
+    ● 인식이 잘 안 되면 또박또박 다시 말씀해 주세요.<br/>
+</div>
 </div>
 
 <script>
@@ -143,6 +162,16 @@
   let mediaRecorder = null;
   let chunks = [];
   let isRecording = false;
+
+  // 🔊 무음 감지용 오디오 관련 전역 변수
+  let audioContext = null;
+  let analyser = null;
+  let sourceNode = null;
+  let silenceStart = null;
+
+  // 🔧 튜닝 가능한 파라미터
+  const SILENCE_THRESHOLD = 0.02;   // 이 값보다 작으면 "조용"하다고 판단 (0.01~0.05 사이로 조절)
+  const SILENCE_DURATION = 2000;    // 무음이 몇 ms 지속되면 stop 할지 (현재 2초)
 
   function addMessage(role, text) {
     const div = document.createElement('div');
@@ -158,11 +187,67 @@
     chatEl.scrollTop = chatEl.scrollHeight;
   }
 
+  // 🔍 무음 감지 루프
+  function startSilenceDetection() {
+    if (!analyser) return;
+
+    const bufferLength = analyser.fftSize;
+    const dataArray = new Uint8Array(bufferLength);
+
+    function detect() {
+      if (!isRecording) return; // 녹음 끝나면 루프 중단
+
+      analyser.getByteTimeDomainData(dataArray);
+
+      // RMS(평균 에너지) 계산
+      let sum = 0;
+      for (let i = 0; i < bufferLength; i++) {
+        const v = (dataArray[i] - 128) / 128; // -1.0 ~ 1.0
+        sum += v * v;
+      }
+      const rms = Math.sqrt(sum / bufferLength);
+
+      // console.log('RMS:', rms);  // 디버그용
+
+      if (rms < SILENCE_THRESHOLD) {
+        // 조용한 구간
+        if (silenceStart === null) {
+          silenceStart = performance.now();
+        } else {
+          const elapsed = performance.now() - silenceStart;
+          if (elapsed > SILENCE_DURATION && isRecording) {
+            // 🔔 일정 시간 이상 무음이면 자동 종료
+            stopRecording();
+            return;
+          }
+        }
+      } else {
+        // 다시 말하기 시작하면 타이머 리셋
+        silenceStart = null;
+      }
+
+      requestAnimationFrame(detect);
+    }
+
+    requestAnimationFrame(detect);
+  }
+
   async function startRecording() {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       mediaRecorder = new MediaRecorder(stream);
       chunks = [];
+
+      // 🔊 AudioContext + Analyser 세팅 (무음 감지용)
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      sourceNode = audioContext.createMediaStreamSource(stream);
+      analyser = audioContext.createAnalyser();
+      analyser.fftSize = 2048;
+      sourceNode.connect(analyser);
+
+      // 무음 감지 시작
+      silenceStart = null;
+      startSilenceDetection();
 
       mediaRecorder.ondataavailable = e => {
         if (e.data.size > 0) chunks.push(e.data);
@@ -217,7 +302,7 @@
       isRecording = true;
       recordBtn.classList.add('recording');
       recordBtn.textContent = '말하기 종료';
-      statusEl.textContent = '지금 말씀하세요... (다시 누르면 전송합니다)';
+      statusEl.textContent = '지금 말씀하세요... (말을 멈추면 자동으로 전송됩니다)';
 
     } catch (err) {
       console.error(err);
@@ -233,6 +318,15 @@
       recordBtn.classList.remove('recording');
       recordBtn.textContent = '말하기';
       statusEl.textContent = '음성을 처리 중입니다...';
+
+      // 🔊 오디오 리소스 정리
+      if (audioContext) {
+        audioContext.close().catch(() => {});
+        audioContext = null;
+      }
+      analyser = null;
+      sourceNode = null;
+      silenceStart = null;
     }
   }
 
@@ -240,6 +334,7 @@
     if (!isRecording) {
       startRecording();
     } else {
+      // 사용자가 직접 끊어도 정상 동작
       stopRecording();
     }
   });

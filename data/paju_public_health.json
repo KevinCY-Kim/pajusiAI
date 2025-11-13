@@ -1,0 +1,1190 @@
+{
+  "general_admin_inquiry": {
+    "description": "보건행정과 및 보건소 전반 행정, 민원 관련 문의",
+    "contacts": [
+      {
+        "department": "보건행정과",
+        "team": "보건행정과장",
+        "position": "보건행정과장",
+        "phone": "031-940-5560",
+        "duties": [
+          "보건행정과 총괄"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "보건행정과",
+        "team": "보건행정팀",
+        "position": "보건행정팀장",
+        "phone": "031-940-4888",
+        "duties": [
+          "보건행정업무 총괄"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "보건행정과",
+        "team": "보건행정팀",
+        "position": "주무관",
+        "phone": "031-940-4890",
+        "duties": [
+          "관용차 관리 및 운행"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "clinic_internal_medicine": {
+    "description": "보건소 내과 진료 예약 및 문의",
+    "contacts": [
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5610",
+        "duties": [
+          "내과 진료"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5218",
+        "duties": [
+          "예방접종실 운영",
+          "BSC 평가관리",
+          "민원실 운영 및 제증명 발급",
+          "내과 관리"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "진료검진팀장",
+        "phone": "031-940-5588",
+        "duties": [
+          "진료검진팀 업무 총괄"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "clinic_certificate_issuance": {
+    "description": "제증명 발급, 민원접수 등 진료 관련 민원실 문의",
+    "contacts": [
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-4885",
+        "duties": [
+          "민원실 업무",
+          "인허가 민원접수 및 수수료 징수"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5670",
+        "duties": [
+          "민원실 운영(민원접수·제증명 발급)"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5218",
+        "duties": [
+          "예방접종실 운영",
+          "BSC 평가관리",
+          "민원실 운영 및 제증명 발급",
+          "내과 관리"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "national_cancer_screening": {
+    "description": "국가암검진 및 암환자의료비 지원 문의",
+    "contacts": [
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5552",
+        "duties": [
+          "연명의료등록사업",
+          "호스피스·웰다잉 문화활성화사업",
+          "장기기증희망등록사업",
+          "국가암검진사업",
+          "암환자의료비 지원사업",
+          "헌혈 장려지원사업"
+        ],
+        "match_score": 3
+      }
+    ]
+  },
+  "hospice_welldying": {
+    "description": "연명의료등록, 호스피스·웰다잉 문화 관련 문의",
+    "contacts": [
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5552",
+        "duties": [
+          "연명의료등록사업",
+          "호스피스·웰다잉 문화활성화사업",
+          "장기기증희망등록사업",
+          "국가암검진사업",
+          "암환자의료비 지원사업",
+          "헌혈 장려지원사업"
+        ],
+        "match_score": 3
+      }
+    ]
+  },
+  "organ_donation": {
+    "description": "장기기증 희망등록 문의",
+    "contacts": [
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5552",
+        "duties": [
+          "연명의료등록사업",
+          "호스피스·웰다잉 문화활성화사업",
+          "장기기증희망등록사업",
+          "국가암검진사업",
+          "암환자의료비 지원사업",
+          "헌혈 장려지원사업"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "blood_donation_promotion": {
+    "description": "헌혈 장려 및 헌혈 관련 홍보 문의",
+    "contacts": [
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5552",
+        "duties": [
+          "연명의료등록사업",
+          "호스피스·웰다잉 문화활성화사업",
+          "장기기증희망등록사업",
+          "국가암검진사업",
+          "암환자의료비 지원사업",
+          "헌혈 장려지원사업"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "mental_health_counseling": {
+    "description": "정신건강 상담, 정신건강복지센터, 자살예방센터 관련 문의",
+    "contacts": [
+      {
+        "department": "마음건강팀",
+        "team": "마음건강팀",
+        "position": "주무관",
+        "phone": "031-940-5464",
+        "duties": [
+          "정신건강복지센터·자살예방센터 위탁운영 관리",
+          "행정입원",
+          "정신건강심사위원회 운영"
+        ],
+        "match_score": 4
+      },
+      {
+        "department": "마음건강팀",
+        "team": "마음건강팀",
+        "position": "마음건강팀장",
+        "phone": "031-940-5568",
+        "duties": [
+          "마음건강팀 총괄"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "마음건강팀",
+        "team": "마음건강팀",
+        "position": "주무관",
+        "phone": "031-940-5245",
+        "duties": [
+          "서무",
+          "회계"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "mental_health_involuntary_admission": {
+    "description": "행정입원 및 정신건강심사위원회 관련 문의",
+    "contacts": [
+      {
+        "department": "마음건강팀",
+        "team": "마음건강팀",
+        "position": "주무관",
+        "phone": "031-940-5464",
+        "duties": [
+          "정신건강복지센터·자살예방센터 위탁운영 관리",
+          "행정입원",
+          "정신건강심사위원회 운영"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "mental_rehabilitation_facility": {
+    "description": "정신재활시설, 정신의료기관, 중독관리통합지원센터 문의",
+    "contacts": [
+      {
+        "department": "마음건강팀",
+        "team": "마음건강팀",
+        "position": "주무관",
+        "phone": "031-940-5615",
+        "duties": [
+          "정신재활시설 관리",
+          "정신의료기관 관리",
+          "중독관리통합지원센터 관리"
+        ],
+        "match_score": 5
+      }
+    ]
+  },
+  "mental_illness_support": {
+    "description": "정신질환자 자립촉진비 및 치료비 지원 문의",
+    "contacts": [
+      {
+        "department": "마음건강팀",
+        "team": "마음건강팀",
+        "position": "주무관",
+        "phone": "031-940-5537",
+        "duties": [
+          "정신질환자 자립촉진비 지원",
+          "정신질환자 치료비 지원",
+          "전국민 마음투자 지원사업"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "감염병대응팀",
+        "team": "감염병대응팀",
+        "position": "주무관",
+        "phone": "031-940-9709",
+        "duties": [
+          "3급 법정감염병 관리",
+          "한센병 관리사업",
+          "공수병 예방치료비 지원",
+          "방역물품 관리",
+          "코로나19 대응"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "감염병대응팀",
+        "team": "감염병대응팀",
+        "position": "주무관",
+        "phone": "031-940-9718",
+        "duties": [
+          "역학조사관",
+          "법정감염병 신고 및 역학조사",
+          "격리입원치료비 지원",
+          "법정감염병 종합지표 관리"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "chronic_disease_education": {
+    "description": "고혈압·당뇨병·이상지혈증 등 만성질환 교육 및 상담",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5587",
+        "duties": [
+          "고혈압·당뇨병·이상지혈증 교육 및 상담",
+          "표준화 교육 운영"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5563",
+        "duties": [
+          "모바일 헬스케어(운동상담)",
+          "신체활동·비만예방 사업",
+          "고혈압·당뇨병 심화교실 운영"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "metabolic_syndrome_management": {
+    "description": "대사증후군 관리 프로그램 문의",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5516",
+        "duties": [
+          "대사증후군 관리"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "nutrition_counseling_general": {
+    "description": "영양관리, 영양 교육 및 일반 영양 사업 문의",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5515",
+        "duties": [
+          "영양관리사업",
+          "국민건강영양조사",
+          "영양플러스 사업",
+          "모바일 헬스케어 사업",
+          "통합건강증진사업(교육 및 공무직 관리)"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "nutrition_plus_program": {
+    "description": "영양플러스 사업 관련 문의",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5515",
+        "duties": [
+          "영양관리사업",
+          "국민건강영양조사",
+          "영양플러스 사업",
+          "모바일 헬스케어 사업",
+          "통합건강증진사업(교육 및 공무직 관리)"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5564",
+        "duties": [
+          "영양플러스 사업"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "mobile_healthcare_program": {
+    "description": "모바일 헬스케어(운동상담·건강관리) 관련 문의",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5563",
+        "duties": [
+          "모바일 헬스케어(운동상담)",
+          "신체활동·비만예방 사업",
+          "고혈압·당뇨병 심화교실 운영"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5515",
+        "duties": [
+          "영양관리사업",
+          "국민건강영양조사",
+          "영양플러스 사업",
+          "모바일 헬스케어 사업",
+          "통합건강증진사업(교육 및 공무직 관리)"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "health_promotion_lifestyle": {
+    "description": "건강생활실천, 신체활동·비만예방 사업 문의",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5616",
+        "duties": [
+          "건강생활실천사업 운영 및 관리"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5563",
+        "duties": [
+          "모바일 헬스케어(운동상담)",
+          "신체활동·비만예방 사업",
+          "고혈압·당뇨병 심화교실 운영"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "보건관리팀",
+        "team": "보건관리팀",
+        "position": "주무관",
+        "phone": "031-940-5213",
+        "duties": [
+          "물리치료실 운영",
+          "건강생활실천사업(경로당·사업체)",
+          "노인의료비 지원사업(인공관절·개안수술비)",
+          "재활장비 대여(문산/법원/파주/파평/적성)"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "community_health_survey": {
+    "description": "지역사회건강조사 관련 문의",
+    "contacts": [
+      {
+        "department": "건강100세팀",
+        "team": "건강100세팀",
+        "position": "주무관",
+        "phone": "031-940-5529",
+        "duties": [
+          "통합건강증진사업(심뇌, 한의약 건강증진)",
+          "지역사회건강조사"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "home_visit_general": {
+    "description": "일반 방문건강관리서비스 문의",
+    "contacts": [
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5586",
+        "duties": [
+          "방문건강관리사업",
+          "AI·IoT 기반 어르신 건강관리사업"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5596",
+        "duties": [
+          "방문건강관리사업",
+          "AI·IoT 기반 어르신건강관리",
+          "기후변화 건강관리",
+          "취약계층 건강관리 프로그램 운영"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5585",
+        "duties": [
+          "방문건강관리",
+          "취약·독거노인관리"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "home_visit_vulnerable_elderly": {
+    "description": "취약·독거노인 방문건강관리 서비스 문의",
+    "contacts": [
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5585",
+        "duties": [
+          "방문건강관리",
+          "취약·독거노인관리"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5743",
+        "duties": [
+          "방문건강관리",
+          "취약·독거노인관리"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5714",
+        "duties": [
+          "방문건강관리",
+          "취약·독거노인관리"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "ai_iot_elderly_health": {
+    "description": "AI·IoT 기반 어르신 건강관리 사업 문의",
+    "contacts": [
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5586",
+        "duties": [
+          "방문건강관리사업",
+          "AI·IoT 기반 어르신 건강관리사업"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5747",
+        "duties": [
+          "AI·IoT 기반 어르신 건강관리사업"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5596",
+        "duties": [
+          "방문건강관리사업",
+          "AI·IoT 기반 어르신건강관리",
+          "기후변화 건강관리",
+          "취약계층 건강관리 프로그램 운영"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "community_rehab_and_home_cancer_care": {
+    "description": "지역사회 중심재활, 재가암관리사업 문의",
+    "contacts": [
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5734",
+        "duties": [
+          "지역사회 중심재활사업",
+          "재가암관리사업",
+          "AI 로봇활용 어르신건강관리사업",
+          "노인 인공관절 수술비 지원"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "elderly_joint_surgery_support": {
+    "description": "노인 인공관절 수술비, 노인의료비 지원 문의",
+    "contacts": [
+      {
+        "department": "보건관리팀",
+        "team": "보건관리팀",
+        "position": "주무관",
+        "phone": "031-940-5213",
+        "duties": [
+          "물리치료실 운영",
+          "건강생활실천사업(경로당·사업체)",
+          "노인의료비 지원사업(인공관절·개안수술비)",
+          "재활장비 대여(문산/법원/파주/파평/적성)"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5734",
+        "duties": [
+          "지역사회 중심재활사업",
+          "재가암관리사업",
+          "AI 로봇활용 어르신건강관리사업",
+          "노인 인공관절 수술비 지원"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "rehab_equipment_rental": {
+    "description": "재활장비 대여 문의",
+    "contacts": [
+      {
+        "department": "보건관리팀",
+        "team": "보건관리팀",
+        "position": "주무관",
+        "phone": "031-940-5213",
+        "duties": [
+          "물리치료실 운영",
+          "건강생활실천사업(경로당·사업체)",
+          "노인의료비 지원사업(인공관절·개안수술비)",
+          "재활장비 대여(문산/법원/파주/파평/적성)"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "oral_health_children_fluoride": {
+    "description": "구강보건사업 및 어린이 불소도포, 치과주치의 사업 문의",
+    "contacts": [
+      {
+        "department": "방문보건팀",
+        "team": "방문보건팀",
+        "position": "주무관",
+        "phone": "031-940-5565",
+        "duties": [
+          "구강보건사업",
+          "어린이 불소도포",
+          "구강보건교육",
+          "치과주치의 사업"
+        ],
+        "match_score": 4
+      }
+    ]
+  },
+  "tuberculosis_prevention": {
+    "description": "결핵예방관리 및 결핵 관련 상담 문의",
+    "contacts": [
+      {
+        "department": "감염병대응팀",
+        "team": "감염병대응팀",
+        "position": "주무관",
+        "phone": "031-940-5603",
+        "duties": [
+          "에이즈 및 성매개감염병 관리",
+          "결핵 환자 및 접촉자 역학조사",
+          "결핵예방 교육·홍보"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "감염병대응팀",
+        "team": "감염병대응팀",
+        "position": "주무관",
+        "phone": "031-940-5583",
+        "duties": [
+          "결핵예방관리사업",
+          "시군종합평가지표 관리",
+          "결핵관리실 공무직 및 기간제 관리",
+          "결핵예방 교육·홍보"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-5574",
+        "duties": [
+          "잠복결핵 채혈 및 의뢰",
+          "결핵도말검사",
+          "말라리아 무증상감염자 감시",
+          "말라리아 양성검체 관리",
+          "매개모기 조사·감시",
+          "말라리아 환자 조사 및 군집사례",
+          "말라리아 신속진단키트 관리",
+          "감염병 예방홍보"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "tuberculosis_testing": {
+    "description": "결핵검사(도말검사, 흉부 X-ray 등) 및 잠복결핵 검사 문의",
+    "contacts": [
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-5574",
+        "duties": [
+          "잠복결핵 채혈 및 의뢰",
+          "결핵도말검사",
+          "말라리아 무증상감염자 감시",
+          "말라리아 양성검체 관리",
+          "매개모기 조사·감시",
+          "말라리아 환자 조사 및 군집사례",
+          "말라리아 신속진단키트 관리",
+          "감염병 예방홍보"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "aids_sti_management": {
+    "description": "에이즈 및 성매개감염병 관리 및 검사 문의",
+    "contacts": [
+      {
+        "department": "감염병대응팀",
+        "team": "감염병대응팀",
+        "position": "주무관",
+        "phone": "031-940-5603",
+        "duties": [
+          "에이즈 및 성매개감염병 관리",
+          "결핵 환자 및 접촉자 역학조사",
+          "결핵예방 교육·홍보"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "malaria_management": {
+    "description": "말라리아 환자, 무증상감염자, 매개모기 조사 등 말라리아 관련 문의",
+    "contacts": [
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-5572",
+        "duties": [
+          "말라리아 환자 역학조사",
+          "매개모기 조사·감시",
+          "감염병 예방홍보"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-5574",
+        "duties": [
+          "잠복결핵 채혈 및 의뢰",
+          "결핵도말검사",
+          "말라리아 무증상감염자 감시",
+          "말라리아 양성검체 관리",
+          "매개모기 조사·감시",
+          "말라리아 환자 조사 및 군집사례",
+          "말라리아 신속진단키트 관리",
+          "감염병 예방홍보"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-5573",
+        "duties": [
+          "말라리아 방역사업"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "national_immunization_program": {
+    "description": "국가예방접종사업, 일반 예방접종 문의",
+    "contacts": [
+      {
+        "department": "감염병정책팀",
+        "team": "감염병정책팀",
+        "position": "주무관",
+        "phone": "031-940-9759",
+        "duties": [
+          "국가예방접종사업"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "감염병정책팀",
+        "team": "감염병정책팀",
+        "position": "주무관",
+        "phone": "031-940-5466",
+        "duties": [
+          "예방접종실"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "진료검진팀",
+        "team": "진료검진팀",
+        "position": "주무관",
+        "phone": "031-940-5218",
+        "duties": [
+          "예방접종실 운영",
+          "BSC 평가관리",
+          "민원실 운영 및 제증명 발급",
+          "내과 관리"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "covid19_vaccination": {
+    "description": "코로나19 예방접종 관련 문의",
+    "contacts": []
+  },
+  "disinfection_and_vector_control": {
+    "description": "방역소독, 방역장비 대여, 소독업체 신고 등 방역 관련 문의",
+    "contacts": [
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-5580",
+        "duties": [
+          "소독업체 신고 관리",
+          "방역장비 대여·관리",
+          "방역시설물 관리(DMS·포충기·기피제)",
+          "차량관리 및 연료비 지급",
+          "드론방역"
+        ],
+        "match_score": 5
+      },
+      {
+        "department": "감염병예방팀",
+        "team": "감염병예방팀",
+        "position": "주무관",
+        "phone": "031-940-9719",
+        "duties": [
+          "방역소독"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "dementia_general_inquiry": {
+    "description": "치매안심센터 전반 운영 및 서비스 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "치매안심센터팀장",
+        "phone": "031-940-3728",
+        "duties": [
+          "치매안심센터 운영 총괄"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3726",
+        "duties": [
+          "치매안심센터 계획 수립 및 평가관리",
+          "예산 관리",
+          "지역사회 협의체 운영",
+          "치매극복의날 행사 총괄",
+          "치매 인식개선 및 특색사업 운영"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3727",
+        "duties": [
+          "협약병원 지정·운영",
+          "협력의사 인건비 지급",
+          "치매 치료관리비"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "dementia_screening": {
+    "description": "치매조기검진, 인지선별검사, 치매감별검사 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3741",
+        "duties": [
+          "치매조기검진",
+          "치매감별검사 협약병원 의뢰"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3733",
+        "duties": [
+          "치매조기검진(진단·상담)",
+          "협약병원 검사 의뢰 및 검사비 지급"
+        ],
+        "match_score": 1
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3737",
+        "duties": [
+          "맞춤형 사례관리(운정·교하)",
+          "치매등록 및 상담",
+          "인지선별검사",
+          "치매치료관리비 소득 재조사"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "dementia_registration_and_treatment_fee": {
+    "description": "치매환자 등록, 치료관리비 지원 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3724",
+        "duties": [
+          "치매환자 등록·상담",
+          "치매치료관리비 지원",
+          "맞춤형 사례관리"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3737",
+        "duties": [
+          "맞춤형 사례관리(운정·교하)",
+          "치매등록 및 상담",
+          "인지선별검사",
+          "치매치료관리비 소득 재조사"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "dementia_case_management": {
+    "description": "맞춤형 치매 사례관리 및 권역별 담당 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3732",
+        "duties": [
+          "맞춤형 사례관리사업 전담",
+          "담당지역: 광탄면, 금촌1·2·3동, 탄현면, 파주읍, 파평면"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3737",
+        "duties": [
+          "맞춤형 사례관리(운정·교하)",
+          "치매등록 및 상담",
+          "인지선별검사",
+          "치매치료관리비 소득 재조사"
+        ],
+        "match_score": 3
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3731",
+        "duties": [
+          "맞춤형 사례관리 전담",
+          "담당지역: 문산읍, 법원읍, 월롱면, 적성면, 조리읍"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "dementia_daycare_and_shelter": {
+    "description": "치매단기쉼터, 쉼터 운영 및 지원 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3744",
+        "duties": [
+          "치매예방 및 인지강화 프로그램 운영",
+          "치매단기쉼터 운영",
+          "외부강사 채용 및 관리"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3736",
+        "duties": [
+          "치매 관련 공단 교육",
+          "이동선별검사 운영",
+          "치매단기쉼터 지원(법원)"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "dementia_family_support": {
+    "description": "치매가족교실, 힐링프로그램, 치매파트너 활동 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3738",
+        "duties": [
+          "치매가족교실 운영",
+          "힐링 프로그램",
+          "치매파트너 활동",
+          "집단 치매예방교육"
+        ],
+        "match_score": 3
+      }
+    ]
+  },
+  "dementia_goods_and_guardianship": {
+    "description": "치매 조호물품 지원, 치매공공후견사업 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3721",
+        "duties": [
+          "조호물품 지원",
+          "치매공공후견사업",
+          "치매안심마을 및 선도단체 운영",
+          "공무직·기간제 관리"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "dementia_community_programs": {
+    "description": "치매안심마을, 선도단체, 치매 인식개선 및 행사 문의",
+    "contacts": [
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3726",
+        "duties": [
+          "치매안심센터 계획 수립 및 평가관리",
+          "예산 관리",
+          "지역사회 협의체 운영",
+          "치매극복의날 행사 총괄",
+          "치매 인식개선 및 특색사업 운영"
+        ],
+        "match_score": 2
+      },
+      {
+        "department": "치매안심센터팀",
+        "team": "치매안심센터팀",
+        "position": "주무관",
+        "phone": "031-940-3721",
+        "duties": [
+          "조호물품 지원",
+          "치매공공후견사업",
+          "치매안심마을 및 선도단체 운영",
+          "공무직·기간제 관리"
+        ],
+        "match_score": 1
+      }
+    ]
+  },
+  "smoking_cessation_clinic": {
+    "description": "금연클리닉 운영 및 금연 상담 문의",
+    "contacts": [
+      {
+        "department": "보건관리팀",
+        "team": "보건관리팀",
+        "position": "주무관",
+        "phone": "031-940-5617",
+        "duties": [
+          "금연클리닉 운영 및 금연 상담"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "physiotherapy_room": {
+    "description": "물리치료실 운영 및 이용 문의",
+    "contacts": [
+      {
+        "department": "보건관리팀",
+        "team": "보건관리팀",
+        "position": "주무관",
+        "phone": "031-940-5213",
+        "duties": [
+          "물리치료실 운영",
+          "건강생활실천사업(경로당·사업체)",
+          "노인의료비 지원사업(인공관절·개안수술비)",
+          "재활장비 대여(문산/법원/파주/파평/적성)"
+        ],
+        "match_score": 2
+      }
+    ]
+  },
+  "health_promotion_senior_center": {
+    "description": "경로당·사업체 대상 건강생활실천·찾아가는 건강증진사업 문의",
+    "contacts": [
+      {
+        "department": "보건관리팀",
+        "team": "보건관리팀",
+        "position": "주무관",
+        "phone": "031-940-5606",
+        "duties": [
+          "통합건강증진사업(신체활동, 영양, 금연)",
+          "BSC 평가관리",
+          "건강으로 물들인 문산 노을길 사업",
+          "찾아가는 건강증진사업(사업체, 경로당 등)"
+        ],
+        "match_score": 2
+      }
+    ]
+  }
+}
