@@ -2,7 +2,7 @@
 # FastAPI + STT + RAG + GPT + TTS + 마이크 버튼 HTML (MVP)
 
 import os
-os.environ["CT2_USE_CUDNN"] = "0"
+# os.environ["CT2_USE_CUDNN"] = "0"
 
 import re 
 import time
@@ -242,4 +242,4 @@ async def voice_chat(
 #    import uvicorn
 #    uvicorn.run("paju_careon_fastapi:app", host="0.0.0.0", port=8903, reload=True)
 
-# 실행명령 : uvicorn paju_careon_fastapi:app --reload --port 8903
+# 실행명령 : python -m uvicorn paju_careon_fastapi:app --reload --host 0.0.0.0 --port 8900

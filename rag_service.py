@@ -9,8 +9,8 @@ from rank_bm25 import BM25Okapi  # ✅ 추가
 
 # JSONL 데이터 경로
 DATA_PATHS = {
-    "cleaned": Path("C:\GitHub\pajusiAI\data\paju_cleaned.jsonl"),
-    "carecenter": Path("C:\GitHub\pajusiAI\data\paju_public_health.json")   
+    "cleaned": Path("/home/stone/pajusiAI/data/paju_cleaned.jsonl"),
+    "carecenter": Path("/home/stone/pajusiAI/data/paju_public_health.json")   
 }
 
 

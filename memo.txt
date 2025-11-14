@@ -1,0 +1,22 @@
+WSL2 GPU Whisper Setup (작성일: 2025-11-14 기준)
+
+conda activate pajusi
+pip freeze > requirements.txt
+conda env export > env_pajusi_gpu.yml
+
+ NVIDIA-SMI 555.59                 Driver Version: 556.13         CUDA Version: 12.5 
+
+ (pajusi) stone@kevinCY:~/pajusiAI$ nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2021 NVIDIA Corporation
+Built on Thu_Nov_18_09:45:30_PST_2021
+Cuda compilation tools, release 11.5, V11.5.119
+Build cuda_11.5.r11.5/compiler.30672275_0
+
+ii  cudnn-local-repo-ubuntu2204-9.15.1 1.0-1                                   amd64        cudnn-local repository configuration files
+ii  cudnn9-cuda-12                     9.15.1.9-1                              amd64        NVIDIA cuDNN for CUDA 12
+ii  cudnn9-cuda-12-9                   9.15.1.9-1                              amd64        NVIDIA cuDNN for CUDA 12.9
+ii  libcudnn9-cuda-12                  9.15.1.9-1                              amd64        cuDNN runtime libraries for CUDA 12.9
+ii  libcudnn9-dev-cuda-12              9.15.1.9-1                              amd64        cuDNN development libraries for CUDA 12.9
+ii  libcudnn9-headers-cuda-12          9.15.1.9-1                              amd64        cuDNN header files for CUDA 12.9
+ii  libcudnn9-static-cuda-12           9.15.1.9-1                              amd64        cuDNN static libraries for CUDA 12.9

@@ -1,13 +1,13 @@
 import os
-os.environ["CT2_USE_CUDNN"] = "0"  # ✅ 맨 위. 어떤 import보다 먼저.
+# os.environ["CT2_USE_CUDNN"] = "0"  # ✅ 맨 위. 어떤 import보다 먼저.
 
 from faster_whisper import WhisperModel
 import time
 
-AUDIO_PATH = "/home/alpaco/homework/kimcy/static/tts/guest_1762906509.mp3"  # 실제 파일
+AUDIO_PATH = "/home/stone/pajusiAI/static/tts/guest_1763028151.mp3"  # 실제 파일
 
 start = time.time()
-model = WhisperModel("small", device="cuda", compute_type="float16")
+model = WhisperModel("medium", device="cuda", compute_type="float16")
 print("✅ 모델 로드 완료 (cuda)")
 print("로드 시간:", round(time.time() - start, 2), "초")
 
