@@ -4,7 +4,7 @@
 
 FastAPI를 기반으로 STT(Speech-to-Text), RAG(Retrieval-Augmented Generation), LLM(Large Language Model), TTS(Text-to-Speech) 기술을 통합하여 사용자에게 음성 기반의 대화형 서비스를 제공합니다.
 
-##  시연 영상
+## 🎬 시연 영상
 
 [!돌봄온 시연 영상](https://youtube.com/shorts/gLKFxrx5eSY)
 > (이미지를 클릭하면 유튜브 시연 영상으로 이동합니다.)
@@ -43,14 +43,12 @@ FastAPI를 기반으로 STT(Speech-to-Text), RAG(Retrieval-Augmented Generation)
 ## 의존성 설치
 pip install -r requirements.txt
 
-
 requirements.txt 파일이 없다면 주요 라이브러리(fastapi, uvicorn, whisper, transformers 등)를 직접 명시하고 설치하세요.
+
 
 ##  서버 실행
 uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
 
-
-웹 브라우저에서 http://localhost:8000 접속하면 서비스 인터페이스 또는 API 문서를 확인할 수 있습니다.
 
 ## 🧠 API 예시
 ✅ 음성 인식 요청 (POST)
@@ -59,59 +57,54 @@ Content-Type: multipart/form-data
 file: <음성파일(.wav/.mp3)>
 
 
-응답 예시
-
-말하기버튼을 누르세요.
-
-✅ 질의응답 요청 (POST)
-POST /rag
-Content-Type: application/json
-{
-  "question": "주차요금 할인 기준 알려줘"
-}
+응답 예시 이미지
+![응답 예시 1](static/img/test1.png)
+![응답 예시 2](static/img/test2.png)
 
 
-응답 예시
 
-{
-  "answer": "파주시 주차요금 할인 기준은 …"
-}
+## 🧩 개발 환경 및 기술 스택
+
+프로젝트는 다음의 환경과 기술을 기반으로 구축되었습니다. (`setting_backup.md` 및 `requirements.txt` 참고)
+
+| 구분             | 기술               | 버전 / 모델                             | 설명                                         
+| :-------------- | :---------------- | :-------------------------------------- | :----------------------------------------- 
+| **Backend**     | Python            | `3.10`                                  | 핵심 프로그래밍 언어                          
+|                 | FastAPI           | `0.121.2`                               | 고성능 웹 프레임워크                          
+|                 | Uvicorn           | `0.38.0`                                | ASGI 서버                                   
+| **AI / ML**     | **STT** (음성인식) | `faster-whisper` (`1.2.1`)              | GPU 가속 STT (Systran/faster-whisper-medium)
+|                 | **RAG** (검색)     | `rank-bm25` (`0.2.2`)                   | 키워드 기반 문서 검색                         
+|                 | **LLM** (답변생성) | SKT A.X (GPT)                           | `openai` (`2.8.0`) SDK 사용                  
+|                 | **TTS** (음성합성) | `gTTS` (`2.5.4`)                        | Google Text-to-Speech                       
+| **Data**        | JSON              | -                                       | 파주시 보건소 조직도 및 업무 데이터              
+|                 | Pandas            | `2.3.3`                                 | 데이터 처리 및 가공                            
+| **Environment** | **OS**            | Ubuntu `22.04.5` (on WSL2)              | 개발 및 실행 환경                            
+|                 | **GPU / CUDA**    | NVIDIA GPU (CUDA `11.8` for PyTorch)    | `torch 2.5.x` 기반 GPU 연산                 
+|                 | **Infra**         | Conda                                   | Python 가상환경 관리                         
 
 
-실제 엔드포인트 이름 및 파라미터는 rag_service.py 코드를 참고해 주세요.
+## 🧱 향후 개선 방향
 
-🧩 개발 환경 및 기술 스택
+1.  **검색 정확도 향상 (Keyword → Semantic Search)**
+    -   현재 `rank-bm25` 키워드 기반 검색을 **Vector DB** (e.g., `FAISS`, `Milvus`)와 임베딩 모델을 활용한 **Semantic Search**로 전환하여 문맥적 의미를 파악하는 검색 기능 구현.
 
-Python 3.10
+2.  **STT/TTS 품질 고도화**
+    -   **STT**: `faster-whisper-large-v3` 모델을 적용하여 음성 인식 정확도 향상.
+    -   **TTS**: `gTTS`를 실시간 스트리밍 및 고품질 음성을 제공하는 `Naver CLOVA Voice` 또는 `Google Cloud TTS` API로 교체하여 사용자 경험 개선.
 
-FastAPI
+3.  **LLM 모델 다각화 및 최적화**
+    -   외부 API 의존도를 낮추고 비용 효율성을 높이기 위해, 한국어 특화 **오픈소스 sLLM** (e.g., `Ko-Solar`, `Llama-3-Ko`)을 로컬 환경에서 직접 호스팅하여 운영하는 방안 검토.
 
-Uvicorn
+4.  **대화형 기능 확장**
+    -   단순 질의응답을 넘어, 이전 대화 내용을 기억하고 이어가는 **대화형 Agent** 기능 구현.
+    -   "민원 접수해줘"와 같은 음성 명령을 인식하여 실제 업무 시스템과 연동하는 **Function Calling** 도입.
 
-Whisper 또는 HuggingFace Transformers
+## 👤 제작자
 
-CUDA-enabled GPU (NVIDIA)
+- KevinCY Kim (김창용)
 
-GitHub 저장소 기반 버전관리
+- GitHub: https://github.com/KevinCY-Kim
 
-🧱 향후 개선 방향
+- 이메일: stonez788@gmail.com
 
-대용량 민원 문서용 인덱싱 및 Vector DB 연동 (예: Pinecone, Milvus)
-
-음성 명령 기반 행정 서비스 자동화 (예: “민원 접수해줘”)
-
-UI 고도화 및 챗봇 대시보드 구현
-
-Whisper Large-v3 등 최신 음성모델 적용 → 인식률 향상
-
-사내 내부용/외부용 챗봇 분리 운영 구조 설계 (보안형 vs 공개형)
-
-👤 제작자
-
-KevinCY Kim (김창용)
-
-GitHub: https://github.com/KevinCY-Kim
-
-이메일: stonez788@gmail.com
-
-⚡ 이 프로젝트는 파주시 공공서비스 AI 챗봇 PoC 목적으로 개발되었습니다.
+- ⚡ 이 프로젝트는 파주시 공공서비스 AI 챗봇 PoC 목적으로 개발되었습니다.
