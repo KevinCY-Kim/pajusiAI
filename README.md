@@ -6,8 +6,8 @@ FastAPI를 기반으로 STT(Speech-to-Text), RAG(Retrieval-Augmented Generation)
 
 ## 🎬 시연 영상
 
-[!돌봄온 시연 영상](https://youtube.com/shorts/gLKFxrx5eSY)
-> (이미지를 클릭하면 유튜브 시연 영상으로 이동합니다.)
+[![돌봄온 시연 영상](https://img.youtube.com/vi/gLKFxrx5eSY/0.jpg)](https://youtube.com/shorts/gLKFxrx5eSY)
+> (썸네일을 클릭하면 유튜브 시연 영상으로 이동합니다.)
 
 ## ✨ 주요 기능
 
@@ -50,18 +50,21 @@ requirements.txt 파일이 없다면 주요 라이브러리(fastapi, uvicorn, wh
 uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
 
 
-## 🧠 API 예시
-✅ 음성 인식 요청 (POST)
-POST /stt
-Content-Type: multipart/form-data
-file: <음성파일(.wav/.mp3)>
-
-
-응답 예시 이미지
-![응답 예시 1](static/img/test1.png)
-![응답 예시 2](static/img/test2.png)
-
-
+## 🖼️ 실행 화면 예시
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="static/img/test1.png" alt="응답 예시 1" width="350">
+      <br>
+      <sub><b>STT 및 답변 생성/출력 화면</b></sub>
+    </td>
+    <td align="center">
+      <img src="static/img/test2.png" alt="응답 예시 2" width="350">
+      <br>
+      <sub><b>TTS 음성 답변 재생 화면</b></sub>
+    </td>
+  </tr>
+</table>
 
 ## 🧩 개발 환경 및 기술 스택
 
