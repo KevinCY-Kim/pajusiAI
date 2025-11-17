@@ -79,7 +79,7 @@ uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
 |                 | **RAG** (검색)     | `rank-bm25` (`0.2.2`)                   | 키워드 기반 문서 검색                         
 |                 | **LLM** (답변생성) | SKT A.X (GPT)                           | `openai` (`2.8.0`) SDK 사용                  
 |                 | **TTS** (음성합성) | `gTTS` (`2.5.4`)                        | Google Text-to-Speech                       
-| **Data**        | JSON              | -                                       | 파주시 보건소 조직도 및 업무 데이터              
+| **Data**        | JSON              | -                                       | 파주시 조례, 법령 및 민원문의처 데이터              
 |                 | Pandas            | `2.3.3`                                 | 데이터 처리 및 가공                            
 | **Environment** | **OS**            | Ubuntu `22.04.5` (on WSL2)              | 개발 및 실행 환경                            
 |                 | **GPU / CUDA**    | NVIDIA GPU (CUDA `11.8` for PyTorch)    | `torch 2.5.x` 기반 GPU 연산                 
@@ -104,10 +104,20 @@ uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
 
 ## 👤 제작자
 
-- KevinCY Kim (김창용)
+- **이름**: KevinCY Kim (김창용)
+- **GitHub**: https://github.com/KevinCY-Kim
+- **이메일**: stonez788@gmail.com
 
-- GitHub: https://github.com/KevinCY-Kim
+## ©️ 저작권 및 사용권 (Copyright & License)
 
-- 이메일: stonez788@gmail.com
+1.  **저작권 (Copyright)**
+    -   본 프로젝트의 모든 창작물(소스 코드, AI 모델, 기획 문서, 발표 자료, 시연 영상 등)에 대한 저작권은 **제작자에게 귀속**됩니다.
+    -   수상 여부와 관계없이 제작자는 결과물을 GitHub 등에 공개하거나 포트폴리오로 자유롭게 활용할 수 있습니다.
+
+2.  **사용권 (License)**
+    -   주최측(파주시)은 본 프로젝트의 결과물을 비영리적 목적(행정 서비스, 내부 교육, 정책 참고, 홍보 및 보도자료 등)에 한해 활용할 수 있는 **비독점적 사용권**을 갖습니다.
+    -   단, 별도의 계약 없이는 주최측이 결과물을 상업적으로 재판매하거나 제3자에게 양도하는 등 2차 사업화에 활용할 수 없습니다.
+
+> 📝 본 정책은 일반적인 공모전 규정(예: 데이콘 이용약관)을 준수하며, 창작자의 권리를 보호하고 공공의 이익을 위한 활용을 조화롭게 보장하는 것을 목적으로 합니다.
 
 - ⚡ 이 프로젝트는 파주시 공공서비스 AI 챗봇 PoC 목적으로 개발되었습니다.
