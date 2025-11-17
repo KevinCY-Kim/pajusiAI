@@ -41,13 +41,13 @@ FastAPI를 기반으로 STT(Speech-to-Text), RAG(Retrieval-Augmented Generation)
                                     └───────────────────┘
 ```
 ## 의존성 설치
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
-requirements.txt 파일이 없다면 주요 라이브러리(fastapi, uvicorn, whisper, transformers 등)를 직접 명시하고 설치하세요.
+- requirements.txt 파일이 없다면 주요 라이브러리(fastapi, uvicorn, whisper, transformers 등)를 직접 명시하고 설치하세요.
 
 
 ##  서버 실행
-uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
+- uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
 
 
 ## 🖼️ 실행 화면 예시
@@ -120,4 +120,4 @@ uvicorn paju_careon_fastapi:app --host 0.0.0.0 --port 8000 --reload
 
 > 📝 본 정책은 일반적인 공모전 규정(예: 데이콘 이용약관)을 준수하며, 창작자의 권리를 보호하고 공공의 이익을 위한 활용을 조화롭게 보장하는 것을 목적으로 합니다.
 
-- ⚡ 이 프로젝트는 파주시 공공서비스 AI 챗봇 PoC 목적으로 개발되었습니다.
+- ⚡ 이 프로젝트는 파주시 공공서비스 AI 챗봇으로 파주시 주최 생성형 AI 대회의 목적에 맞춰 개발되었습니다.
